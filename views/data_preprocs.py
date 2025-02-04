@@ -236,4 +236,7 @@ if uploaded_files:
             )
         #############################################################################################################
             
-st.success("🎉 All files processed!")
+  # Show success only when file(s) uploaded, else display warning
+    st.success("🎉 All files processed!")
+else:
+    st.warning("⚠️ No files to process!")
